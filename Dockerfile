@@ -1,5 +1,5 @@
 FROM phusion/baseimage:0.10.0
-MAINTAINER Denys Zhdanov <denis.zhdanov@gmail.com>
+MAINTAINER Alex Sorokoletov <contact@dreamteam-mobile.com>
 
 RUN apt-get -y update \
   && apt-get -y upgrade \
@@ -27,9 +27,9 @@ RUN wget https://github.com/lomik/go-carbon/releases/download/v0.12.0/go-carbon_
 # install grafana
 ADD conf/etc/grafana/grafana.ini /etc/grafana/grafana.ini
 ADD conf/etc/grafana/provisioning/datasources/carbonapi.yaml /etc/grafana/provisioning/datasources/carbonapi.yaml
-RUN wget https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.0.1_amd64.deb \
-  && dpkg -i grafana_5.0.1_amd64.deb \
-  && rm /grafana_5.0.1_amd64.deb \
+RUN wget https://s3-us-west-2.amazonaws.com/grafana-releases/release/grafana_5.1.4_amd64.deb \
+  && dpkg -i grafana_5.1.4_amd64.deb \
+  && rm /grafana_5.1.4_amd64.deb \
   && service grafana-server restart \
   && sleep 5 \
   && service grafana-server stop \
