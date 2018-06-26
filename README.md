@@ -12,7 +12,7 @@ docker run -d\
  --restart=always\
  -p 80:80\
  -p 2003-2004:2003-2004\
- gographite/go-graphite
+ dreamteammobile/docker-go-graphite
 ```
 
 ### Includes the following components
