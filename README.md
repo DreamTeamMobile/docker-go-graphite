@@ -1,5 +1,9 @@
 # Docker image for go-carbon + carbonapi + grafana
 
+[![Docker pulls](https://img.shields.io/docker/pulls/dreamteammobile/docker-go-graphite.svg)](https://hub.docker.com/r/dreamteammobile/docker-go-graphite)
+[![Docker build status](https://img.shields.io/docker/automated/dreamteammobile/docker-go-graphite.svg)](https://hub.docker.com/r/dreamteammobile/docker-go-graphite)
+
+
 ## Quick Start
 
 ```sh
