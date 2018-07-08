@@ -17,8 +17,8 @@ docker run -d\
 
 ### Includes the following components
 
-* [Nginx](http://nginx.org/) - reverse proxies Grafana dashboard
-* [Grafana](http://www.grafana.org/) - front-end dashboard
+* [Nginx](https://nginx.org/) - reverse proxies Grafana dashboard
+* [Grafana](https://grafana.com/) - front-end dashboard
 * [Go-carbon](https://github.com/lomik/go-carbon) - Golang implementation of Graphite/Carbon server
 * [Carbonapi](https://github.com/go-graphite/carbonapi) - Golang implementation of Graphite-web
 
